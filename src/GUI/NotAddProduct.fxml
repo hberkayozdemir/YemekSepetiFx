@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Controller.Controller" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="83.0" prefWidth="598.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="584.0" layoutX="7.0" onMouseClicked="#NotAddProduct">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label id="HataMesaj" fx:id="HataMesaj" layoutX="209.0" layoutY="144.0" prefHeight="60.0" prefWidth="329.0" text="You did not add any product." textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="135.0" fitWidth="138.0" layoutX="51.0" layoutY="133.0">
+         <image>
+            <Image url="@../Pictures/PngItem_5306468.png" />
+         </image>
+      </ImageView>
+      <Button onMouseClicked="#NotAddProduct" id="FalseBack" fx:id="FalseBack" layoutX="299.0" layoutY="293.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="72.0" text="Back" />
+      <Label id="HataMesaj" fx:id="HataMesaj1" layoutX="209.0" layoutY="188.0" prefHeight="49.0" prefWidth="279.0" text="Please return and add at least one." textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

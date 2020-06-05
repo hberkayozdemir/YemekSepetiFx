@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="593.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.Economy">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="100.0" prefWidth="660.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="584.0" layoutX="6.0" onMouseClicked="#Back">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="253.0" layoutY="122.0" prefHeight="35.0" prefWidth="345.0" text="Bakery Money" textFill="#e80000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="321.0" layoutY="375.0" mnemonicParsing="false" onAction="#RefreshMoney" prefHeight="44.0" prefWidth="237.0" style="-fx-background-color: #047921;" text="Refresh" textFill="WHITE" />
+      <Label fx:id="RestourantName1" layoutX="293.0" layoutY="96.0" prefHeight="35.0" prefWidth="198.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="94.0" fitWidth="89.0" layoutX="233.0" layoutY="191.0">
+         <image>
+            <Image url="@../Pictures/30.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Total" layoutX="339.0" layoutY="238.0" prefHeight="19.0" prefWidth="102.0" text="0" />
+      <Label layoutX="451.0" layoutY="238.0" prefHeight="19.0" prefWidth="39.0" text="\$" />
+      <Button layoutX="59.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="44.0" prefWidth="237.0" style="-fx-background-color: #047921;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

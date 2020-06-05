@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.ChinieseEconmy">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="100.0" prefWidth="660.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="584.0" onMouseClicked="#Back">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="198.0" layoutY="127.0" prefHeight="35.0" prefWidth="349.0" text="Chinesse Money" textFill="#e80000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="308.0" layoutY="366.0" mnemonicParsing="false" onAction="#RefreshMoney" prefHeight="44.0" prefWidth="259.0" style="-fx-background-color: #047921;" text="Refresh" textFill="WHITE" />
+      <ImageView fitHeight="94.0" fitWidth="89.0" layoutX="198.0" layoutY="191.0">
+         <image>
+            <Image url="@../Pictures/30.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Total" layoutX="339.0" layoutY="238.0" prefHeight="19.0" prefWidth="75.0" text="0" />
+      <Label layoutX="418.0" layoutY="238.0" prefHeight="19.0" prefWidth="39.0" text="\$" />
+      <Button layoutX="27.0" layoutY="366.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="44.0" prefWidth="259.0" style="-fx-background-color: #047921;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

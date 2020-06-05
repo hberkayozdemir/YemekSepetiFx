@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="586.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.DessertEconmy">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="100.0" prefWidth="660.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="584.0" onMouseClicked="#Back">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="239.0" layoutY="111.0" prefHeight="35.0" prefWidth="274.0" text="Dessert Money" textFill="#e80000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="330.0" layoutY="406.0" mnemonicParsing="false" onAction="#RefreshMoney" prefHeight="44.0" prefWidth="231.0" style="-fx-background-color: #047921;" text="Resfresh" textFill="WHITE" />
+      <ImageView fitHeight="94.0" fitWidth="89.0" layoutX="257.0" layoutY="200.0">
+         <image>
+            <Image url="@../Pictures/30.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Total" layoutX="339.0" layoutY="247.0" prefHeight="19.0" prefWidth="73.0" text="0" />
+      <Label layoutX="415.0" layoutY="247.0" prefHeight="19.0" prefWidth="39.0" text="\$" />
+      <Button layoutX="35.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="44.0" prefWidth="231.0" style="-fx-background-color: #047921;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

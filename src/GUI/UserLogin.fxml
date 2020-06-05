@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="420.0">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="420.0" layoutY="6.0" onMouseClicked="#UserLogin_BackBtn">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <GridPane layoutY="162.0" prefHeight="230.0" prefWidth="398.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="194.0" minHeight="10.0" prefHeight="150.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="158.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="49.0" prefWidth="208.0" text="                   Username:" />
+            <Label prefHeight="119.0" prefWidth="227.0" text="                   Password:" GridPane.rowIndex="1" />
+            <TextField fx:id="UserIDD" GridPane.columnIndex="1" />
+            <PasswordField fx:id="UserPassWordd" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Button layoutY="447.0" mnemonicParsing="false" onMouseClicked="#UserLogin_NewAccountBtn" prefHeight="100.0" prefWidth="147.0" text="New Account" />
+      <Button layoutX="272.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#UserLogin_LoginBtn" prefHeight="100.0" prefWidth="147.0" text="Login" />
+      <Button layoutX="151.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#UserLogin_Back" prefHeight="100.0" prefWidth="117.0" text="Back" />
+   </children>
+</AnchorPane>

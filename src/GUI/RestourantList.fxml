@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <Pane layoutX="2.0" layoutY="1.0" prefHeight="94.0" prefWidth="658.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="584.0" layoutX="37.0" onMouseClicked="#UserLogin_BackBtn">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <GridPane layoutY="129.0" prefHeight="304.0" prefWidth="658.0" style="-fx-background-color: #F7F700; -fx-grid-lines-visible: true;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="591.0" minWidth="10.0" prefWidth="380.66668701171875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="168.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="40.0" prefWidth="385.0" text="                        Restourants" textFill="#dd0c0c">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="OrderButton5" mnemonicParsing="false" onMouseClicked="#RestourantList_5Btn" prefHeight="50.0" prefWidth="227.0" style="-fx-background-color: #24A800;" text="Order" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="OrderButton4" mnemonicParsing="false" onMouseClicked="#RestourantList_4Btn" prefHeight="50.0" prefWidth="237.0" style="-fx-background-color: #24A800;" text="Order" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="OrderButton3" mnemonicParsing="false" onMouseClicked="#RestourantList_3Btn" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #24A800;" text="Order" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="OrderButton2" mnemonicParsing="false" onMouseClicked="#RestourantList_2Btn" prefHeight="50.0" prefWidth="229.0" style="-fx-background-color: #24A800;" text="Order" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="OrderButton1" mnemonicParsing="false" onMouseClicked="#RestourantList_1Btn" prefHeight="50.0" prefWidth="232.0" style="-fx-background-color: #24A800;" text="Order" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="27.0" />
+               </font>
+            </Button>
+            <Label prefHeight="42.0" prefWidth="434.0" style="-fx-background-color: #FFFFFF;" text="                                      Chinese Restaurant" textFill="RED" GridPane.rowIndex="1" />
+            <Label prefHeight="43.0" prefWidth="454.0" style="-fx-background-color: #FFFFFF;" text="                                                Kebab" textFill="RED" GridPane.rowIndex="2" />
+            <Label prefHeight="43.0" prefWidth="436.0" style="-fx-background-color: #FFFFFF;" text="                                                Pizza" textFill="RED" GridPane.rowIndex="3" />
+            <Label prefHeight="41.0" prefWidth="434.0" style="-fx-background-color: #FFFFFF;" text="                                              Dessert" textFill="RED" GridPane.rowIndex="4" />
+            <Label prefHeight="56.0" prefWidth="436.0" style="-fx-background-color: #FFFFFF;" text="                                              Bakery" textFill="#f50000" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button layoutY="433.0" mnemonicParsing="false" onMouseClicked="#RestourantList_BackBtn" prefHeight="41.0" prefWidth="660.0" style="-fx-background-color: #c30202;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

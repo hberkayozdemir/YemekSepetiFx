@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOP.PizzaEconomy">
+   <children>
+      <Pane layoutY="-4.0" prefHeight="100.0" prefWidth="660.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="584.0" onMouseClicked="#Back">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="245.0" layoutY="116.0" prefHeight="35.0" prefWidth="227.0" text="Pizza Money" textFill="#e80000">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="305.0" layoutY="406.0" mnemonicParsing="false" onAction="#RefreshMoney" prefHeight="44.0" prefWidth="248.0" style="-fx-background-color: #047921;" text="Refresh" textFill="WHITE" />
+      <Button layoutX="26.0" layoutY="406.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="44.0" prefWidth="248.0" style="-fx-background-color: #047921;" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="94.0" fitWidth="89.0" layoutX="226.0" layoutY="202.0">
+         <image>
+            <Image url="@../Pictures/30.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Total" layoutX="323.0" layoutY="249.0" prefHeight="19.0" prefWidth="78.0" text="0" />
+      <Label layoutX="409.0" layoutY="249.0" prefHeight="19.0" prefWidth="39.0" text="\$" />
+   </children>
+</AnchorPane>

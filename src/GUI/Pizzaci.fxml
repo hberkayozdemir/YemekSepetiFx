@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1328.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Restourants.Pizzaci">
+   <children>
+      <Pane layoutX="238.0" layoutY="-8.0" prefHeight="100.0" prefWidth="1330.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="584.0" layoutX="157.0" layoutY="10.0" onMouseClicked="#Back">
+               <image>
+                  <Image url="@../Pictures/MainLogoCropded.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="249.0" layoutY="534.0" mnemonicParsing="false"  prefHeight="51.0" prefWidth="126.0" style="-fx-background-color: #ff0000;" text="Sepetim" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="450.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#Back" prefHeight="51.0" prefWidth="126.0" style="-fx-background-color: #07ac14;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="PizzaCounter" layoutX="375.0" layoutY="518.0" prefHeight="32.0" prefWidth="15.0" style="-fx-background-color: #ff0000;" text="0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="102.0" prefHeight="32.0" prefWidth="612.0" text="                                                  Pizza" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="93.0" fitWidth="170.0" layoutX="48.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/18.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="166.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#MixedPizza" text="32.85£" />
+      <ImageView fitHeight="108.0" fitWidth="170.0" layoutX="290.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/14.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="162.0" layoutX="532.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/20.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="412.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#UrfaKebap" text="22.85£" />
+      <Button layoutX="643.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#PepperoniPizza" text="25.35£" />
+      <ImageView fitHeight="100.0" fitWidth="170.0" layoutX="48.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/21.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="170.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#CrustyPizza" text="42.55£" />
+      <ImageView fitHeight="100.0" fitWidth="162.0" layoutX="532.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/23.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="170.0" layoutX="290.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/22.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="412.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#MilanoPizza" text="13.30£" />
+      <Button layoutX="649.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#Lasagna" text="18.70£" />
+      <Text fill="#41493d" fontSmoothingType="LCD" layoutX="47.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mixed Pizza" wrappingWidth="81.47002792358398" />
+      <Text fill="#41493d" fontSmoothingType="LCD" layoutX="290.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Urfa Kebab" wrappingWidth="81.47002792358398" />
+      <Text fill="#41493d" fontSmoothingType="LCD" layoutX="532.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pepperoni Pizza" wrappingWidth="94.80337142944339" />
+      <Text fill="#41493d" fontSmoothingType="LCD" layoutX="532.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lasagna" wrappingWidth="81.47002792358398" />
+      <Text fill="#41493d" fontSmoothingType="LCD" layoutX="290.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milano Pizza" wrappingWidth="81.47002792358398" />
+      <Text fill="#41493d" fontSmoothingType="LCD" layoutX="41.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crusty Pizza" wrappingWidth="94.80337142944336" />
+      <TableView fx:id="Table" editable="true" layoutX="729.0" layoutY="178.0" prefHeight="329.0" prefWidth="542.0">
+         <columns>
+            <TableColumn fx:id="ColName" prefWidth="50.0" text="Name" />
+            <TableColumn fx:id="ColPrice" prefWidth="50.0" text="Price" />
+            <TableColumn fx:id="ColQuantity" prefWidth="50.0" text="Quantity" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="772.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#deleteLast" prefHeight="51.0" prefWidth="153.0" style="-fx-background-color: #07ac14;" text="Removelast" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="1019.0" layoutY="533.0" mnemonicParsing="false" onMouseClicked="#deleteAll" prefHeight="51.0" prefWidth="126.0" style="-fx-background-color: #07ac14;" text="Paid" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
